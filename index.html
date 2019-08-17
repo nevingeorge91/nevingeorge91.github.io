@@ -1,37 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Startup</title>
+<head>
+	<!-- StyleSheet Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--Google Fonts  -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Playfair+Display&display=swap" rel="stylesheet">
+	<!-- CSS style sheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Meta for charset(?) & viewport -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Trying this on my own </title>
+</head>
+<body>
+<!--Header  -->
+	<div class="header">
+  		<h1 class="headername">Mobile Photography</h1>
+  			<h2 class="headertag">why it's dope</h2>
+	</div>
+<!-- What You'll need   -->
+	<div class="optioncontainer">
+		<h2 class="optiontitle">what you'll need</h2>
+			<div class="Subscribebuttonwrapper">
+				<div class="button ">
+					<h2 id="buttonwords">Subscribe for more info</h2>
+				</div>
+			</div>
+			<div class="actualoptionscontainer">
+				<div class="options">
+					<div class="picContainer">
+						<div class="pic1"></div>
+							<h2 id="option1">Phone</h2>
+					</div>
+					<div class="picContainer">
+						<div class="pic2"></div>
+							<h2 id="option2">App</h2>
+					</div>	
+					<div class="picContainer">
+						<div class="pic3"></div>
+							<h2 id="option3">Equipment</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- NavBar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">First Attempt</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    <!-- Note that the below Bootstrap file is a specific version. If you grab the most
-    current from Bootstrap website, you will see the button grow transition being a lot faster
-    than in my video. Use whichever style sheet you like best! -->
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- My own stylesheet -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="startup text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-12 my-auto">
-            <h1 class="text-uppercase faded">
-              <strong>the biggest startup event of the year</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-12 my-auto">
-            <button class="btn btn-primary btn-xl">Find Out More</button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-  </body>
-
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href=".headertag">Mobile Photography <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href=".button">What you'll need</a>
+	      </li>
+	      <!-- <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Dropdown
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="#">Another action</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+	      </li> -->
+	  <!--   </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">lol this doesn't do anything</button> -->
+	    </form>
+	  </div>
+	</nav>
+<!-- JSS CND -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
