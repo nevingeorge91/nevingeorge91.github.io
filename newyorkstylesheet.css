@@ -1,0 +1,483 @@
+body {
+    background-color: #ededed;
+}
+
+.zone {
+    cursor:pointer;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/*Nav Bar*/
+.navcolor {
+    background-color: rgb(46, 46, 46);
+    border-color: none;
+}
+
+.sticky {
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 1em;
+    padding: 0px 0px;
+    margin: 1px 1px;
+    /*width: 100%;*/
+}
+
+.main-nav > li {
+    display: inline-flex;
+    text-align: center;
+}
+
+.main-nav > li > a {
+    padding: auto;
+    min-width: 75px;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    margin: .5em .5em;
+}
+
+
+.push {
+    margin-left: auto;
+}
+
+
+/*Cover*/
+.gbcontainer {
+    /*Just the image*/
+    background-image: url("./img/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    min-height: 332px;
+    position: relative;
+
+}
+
+
+#gbtext {
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 3px 8px rgba(10,10,10,0.85);
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    z-index: 1;
+    margin: 0;
+}
+
+/*Landing (GRID)*/
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: #2b2b2b;
+    padding: 130px;
+    margin: 20px;
+}
+
+
+footer {
+    text-align: center;
+}
+
+/* Button Attempt*/
+
+
+.gridbuttons {
+    list-style: none;
+    display: grid;
+    width: 100%;
+    height: calc(175px + 10vmin);
+    /*min-height: calc(175px + 2vmax);*/
+   /* grid-template-columns: repeat(auto-fit, minmax(175px, 2fr));*/
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: repeat(auto-fit minmax(175px, 2fr));*/
+    grid-template-rows: auto auto;
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+    margin: 0px 0px 10px;
+    padding: 5px 0px calc(.25vmin + 15px);
+
+}
+
+.btn {
+    /*background-color: #222224;*/
+    font-size: .75em;
+    color: white;
+    margin: 0px 10px;
+}
+
+.btn:hover {
+    color: white;
+}
+
+/**********************************************
+When is everyone landing
+**********************************************/
+
+.btntext {
+    display: block;
+    color: black;
+    background-color: white;
+    padding: .1em .55em;
+    font-family: 'Muli', sans-serif;
+    font-size: calc(8px + 1vmin);
+    text-align: left;
+    font-weight: bold;
+
+}
+.btn {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 3px 10px 18px 0 rgba(0,0,0,0.15);
+    padding: 0;
+}
+
+.btn-option1 {
+     background-image: url(https://images.unsplash.com/photo-1496132836367-05e4dee21c93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80);
+}
+
+.btn-option2 {
+    background-image: url(https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1496&q=80);
+} 
+
+.btn-option3 {
+    background-image: url(https://images.unsplash.com/photo-1529619768328-e37af76c6fe5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+} 
+
+
+.landingcontainer {
+    list-style: none;
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 7fr));
+    grid-column-gap: .5em;
+    grid-row-gap: 2.5em;
+    padding: 5px;
+}
+
+.itemcard {
+    color: black;
+    border-radius: 8px;
+    box-shadow: 3px 10px 18px 0 rgba(0,0,0,0.35);
+    width: 90%;
+    height: 80%;
+    min-height: 233px;
+    margin: .5em .5em;
+}
+
+.itemcard > p {
+    position: relative;
+    bottom: 2.75em;
+    text-align: center;
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+
+.picof {
+    background-image: url(./img/placeholder.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 2.55em;
+    width: 80%;
+    height: 75%;
+    filter: drop-shadow(5px 5px 20px gray);
+    margin: 0 auto;
+}
+.libby {
+    background-image: url(./img/libby.png);
+}
+
+.jaimebecky {
+    background-image: url(./img/jaimebecky.png);
+}
+
+.nevin {
+    background-image: url(./img/nevin.png);
+}
+
+.bibin {
+    background-image: url(./img/bibin.png);
+}
+
+.johnson {
+    background-image: url(./img/johnson.png);
+}
+
+.andrew {
+    background-image: url(./img/andrew.png);
+}
+
+.justin {
+    background-image: url(./img/justin.png);
+}
+.who, .airportlanding, .arrival, .airportdeparture, .departure {
+    font-size: .75em;
+    line-height: 1.2em;
+}
+
+.who {
+    /*padding: 0px 0px 1em;*/
+    position: relative;
+    top: -3.35em;
+    font-size: .70em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.arrival {
+    text-decoration: overline;
+}
+
+.airportlanding, .airportdeparture {
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*****************************************/
+/*Schedule*/
+/*****************************************/
+
+.schedulecontainer {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; 
+    grid-column-gap: .5em;
+    grid-row-gap: 1.5em; 
+    padding: 5px .2em;
+    margin: 0;
+}
+
+.daywrapper {
+    margin: 0;
+}
+
+.daywrapper {
+    width: 95%;
+    justify-content: center;
+    align-content: center;
+    padding: .25em .5em;
+    margin: auto;
+}
+
+.saturday, .friday {
+    list-style: none;
+    border-radius: 8px;
+    box-shadow: 3px 10px 18px 0 rgba(0,0,0,0.35);
+    padding: .1em 1em;
+}
+
+.forgroomsmen {
+    padding: .1em .1em;
+}
+
+.subeventtitle {
+    text-align: center;
+}
+
+
+h2 {
+    font-weight: bold;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow-y: hidden;
+    font-size: calc(15px + 5vmin);
+    margin: .5em .2em .5em;
+    text-align: center;
+    overflow-x: auto;
+}
+
+h3 {
+    font-weight: bold;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow-y: hidden;
+    font-size: calc(10px + 5vmin);
+    margin: .5em .2em .5em;
+    text-align: center;
+    overflow-x: auto;
+    text-transform: capitalize;
+
+}
+
+.weddingpic {
+    width: 100%;
+    height: 250px;
+    background-image: url(./img/randl.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.location {
+    font-size: .85em;
+    font-size: calc(12px + 1vmin);
+    font-weight: bold;
+}
+
+.time {
+    text-transform: lowercase;
+    font-size: .75em;
+    font-size: calc(10px + 1vmin);
+}
+
+.afterparty {
+    width: 100%;
+    height: 10em;
+    background-image: url(./img/bhangra.png);
+    background-size: contain;
+    background-position: center
+    background-repeat: no-repeat;
+}
+
+/*********************************************/
+/*Things to do in NJ*/
+/*********************************************/
+
+a {
+    color: inherit;
+}
+
+.njwrapper {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 5px .2em 3em;
+    margin: 0;
+}
+
+
+/**********************************/
+/*Food*/
+/**********************************/
+
+
+.njheaders {
+    font-size: calc(38px + 2vmin);
+    padding: 5px .1em .20em;
+    margin: 0;
+    text-align: left;
+}
+
+.njoptions {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px , 1fr));
+    grid-template-rows: auto; 
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+}
+
+.opcard {
+    list-style: none;
+    border-radius: 2px;
+    box-shadow: 3px 10px 18px 0 rgba(0,0,0,0.35);
+    min-height: calc(110px + 5vmin);
+    padding: .2em .5em; 
+    margin: 0;
+}
+
+.ftext {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: calc(10px + .5vmin);
+}
+
+.restaurant span {
+    position: relative;
+    top: 4.75em;
+    padding-left: .45em;
+    padding-right: .15em;
+    font-family: 'Muli', sans-serif;
+    color: #141414;
+    font-size: 1.25em;
+    font-weight: bold;
+    font-style: italic;
+    background-color: white;
+
+}
+
+.itempic {
+    /*box-shadow: 3px 10px 18px 0 rgba(0,0,0,0.35);*/
+    width: 100%;
+    height: 40%; 
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.fpic1 {
+    background-image: url(https://assets3.thrillist.com/v1/image/1135855/size/tmg-venue_carousel_mobile.jpg);
+}
+
+.fpic2 {
+    background-image: url(https://s3-media3.fl.yelpcdn.com/bphoto/w5_bccA0edjbSwzUVZS-PA/o.jpg);
+}
+
+.fpic3 {
+    background-image: url(https://scontent.fhou1-1.fna.fbcdn.net/v/t1.0-9/16265388_10154339532601545_1359513220399127457_n.jpg?_nc_cat=100&_nc_oc=AQkcjqJs-fEA_dVBSIU0p6aA32XkbxpAmI_Ck4-YolLHGsg8gTpZlRNN87Ck4qVBQT0&_nc_ht=scontent.fhou1-1.fna&oh=af637cd67d4a9e6501856e4c45456a42&oe=5E0903EA);
+}
+
+.fpic4 {
+    background-image: url(https://static01.nyt.com/images/2013/07/03/dining/03REST_SPAN/03REST_SPAN-articleLarge.jpg?quality=75&auto=webp&disable=upscale);
+}
+
+/************************/
+/*Bars*/
+/************************/
+
+.drpic1 {
+    background-image: url(https://static1.squarespace.com/static/5804f105893fc02b80dbd9c4/582e123eb3db2b4e845c1e0a/5840f3bbe6f2e15e95c8bbef/1480651947980/TOPBAR1015-DeadRabbit.jpg?format=1500w);
+}
+
+.drpic2 {
+    background-image: url(https://img.grouponcdn.com/deal/qnA6xjb7HHfrNH95xkPE/Ja-700x420/v1/c700x420.jpg);
+}
+
+.drpic3 {
+    background-image: url(https://439y801sbign2kdbyt1m3mpl-wpengine.netdna-ssl.com/wp-content/uploads/2014/06/about_us-1600x600.jpg);
+}
+
+.drpic4 {
+    background-image: url(https://pixel.nymag.com/imgs/listings/restaurants/bathtub-gin/bathtub-gin-01.w1200.h630.jpg);
+}
